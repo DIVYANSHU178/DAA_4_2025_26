@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Stack Visualizer</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <h1>Stack Visualizer</h1>
+    <div class='container'>
+        <div class='controls'>
+            <label for='stackSize'>Max Stack Size:</label>
+            <input type='number' id='stackSize' value='5' min='1' max='20'>
+            <button id='initBtn'>Initialize Stack</button>
+            <br><br>
+            <input type='number' id='valueInput' placeholder='Enter value'>
+            <button id='pushBtn'>Push</button>
+            <button id='popBtn'>Pop</button>
+            <button id='peekBtn'>Peek</button>
+            <button id='isEmptyBtn'>Is Empty?</button>
+            <br><br>
+            <div id='message'></div>
+        </div>
+        <div class='stack-container'>
+            <div id='stack'></div>
+        </div>
+    </div>
+    <script src='stack.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>
